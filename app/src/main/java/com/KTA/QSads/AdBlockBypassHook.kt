@@ -1,4 +1,4 @@
-package com.KTA.QSads.hook
+package com.KTA.QSads
 
 import android.webkit.*
 import com.github.kyuubiran.ezxhelper.utils.*
@@ -27,7 +27,7 @@ object AdBlockBypassHook : BaseHook() {
                 })()
             """.trimIndent()
             webView.evaluateJavascript(bypassScript, null)
-            Log.i(TAG, "Inited hook: ${it.javaClass.simpleName}")
+            Log.i("AdBlock", "Injected anti-adblock bypass script.")
         }
     }
 }

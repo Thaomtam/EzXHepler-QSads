@@ -1,4 +1,4 @@
-package com.KTA.QSads.hook
+package com.KTA.QSads
 
 import android.webkit.*
 import com.github.kyuubiran.ezxhelper.utils.*
@@ -26,7 +26,7 @@ object AdBlockNetworkHook : BaseHook() {
             for (domain in adDomains) {
                 if (url.contains(domain)) {
                     param.result = WebResourceResponse(null, null, null)
-                    Log.i(TAG, "Blocked network request to: $url")
+                    Log.i("AdBlock", "Blocked network request to: $url")
                     return@hookAfter
                 }
             }

@@ -1,4 +1,4 @@
-package com.KTA.QSads.hook
+package com.KTA.QSads
 
 abstract class BaseHook {
     var isInit: Boolean = false

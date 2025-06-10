@@ -1,4 +1,4 @@
-package com.KTA.QSads.hook
+package com.KTA.QSads
 
 import android.webkit.*
 import com.github.kyuubiran.ezxhelper.utils.*
@@ -16,7 +16,7 @@ object AdBlockCosmeticHook : BaseHook() {
                 })()
             """.trimIndent()
             webView.evaluateJavascript(js, null)
-            Log.i(TAG, "Removed cosmetic ads from page.")
+            Log.i("AdBlock", "Removed cosmetic ads from page.")
         }
     }
 }
