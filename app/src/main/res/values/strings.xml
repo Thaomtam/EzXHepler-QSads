@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">QSads</string>
+    <string name="xposed_desc">Module chặn quảng cáo</string>
+</resources>
