@@ -27,7 +27,7 @@ object AdBlockBypassHook : BaseHook() {
                 })()
             """.trimIndent()
             webView.evaluateJavascript(bypassScript, null)
-            Log.i("AdBlock", "Injected anti-adblock bypass script.")
+            Log.i(TAG, "Inited hook: ${it.javaClass.simpleName}")
         }
     }
 }
