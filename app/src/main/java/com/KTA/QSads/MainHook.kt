@@ -17,8 +17,8 @@ class MainHook : IXposedHookLoadPackage, IXposedHookZygoteInit {
     override fun handleLoadPackage(lpparam: XC_LoadPackage.LoadPackageParam) {
         // Khởi tạo EzXHelper
         EzXHelperInit.initHandleLoadPackage(lpparam)
-        EzXHelperInit.setLogTag(AdBlock)
-        EzXHelperInit.setToastTag(AdBlock)
+        EzXHelperInit.setLogTag(TAG)
+        EzXHelperInit.setToastTag(TAG)
 
         // Không cần kiểm tra package cụ thể → để LSPosed kiểm soát qua scope
         initHooks(
