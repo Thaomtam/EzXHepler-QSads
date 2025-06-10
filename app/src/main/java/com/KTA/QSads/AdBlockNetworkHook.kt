@@ -26,7 +26,7 @@ object AdBlockNetworkHook : BaseHook() {
             for (domain in adDomains) {
                 if (url.contains(domain)) {
                     param.result = WebResourceResponse(null, null, null)
-                    Log.i("AdBlock", "Blocked network request to: $url")
+                    Log.i("Blocked network request to: $url") // Fix: Use single message parameter
                     return@hookAfter
                 }
             }

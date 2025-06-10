@@ -16,7 +16,7 @@ object AdBlockCosmeticHook : BaseHook() {
                 })()
             """.trimIndent()
             webView.evaluateJavascript(js, null)
-            Log.i("AdBlock", "Removed cosmetic ads from page.")
+            Log.i("Removed cosmetic ads from page.") // Fix: Use single message parameter
         }
     }
 }
